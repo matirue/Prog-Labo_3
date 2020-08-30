@@ -1,6 +1,8 @@
 <?php
 require_once "namespace/varios.php";
 
+//aca solo pido que es lo que voya a usr del neamespaces
+//funciona como el using
 use mi_namespace\ {
     Clase,
     function funcion,
