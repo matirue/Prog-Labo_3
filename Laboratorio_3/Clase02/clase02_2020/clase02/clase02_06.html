@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>TABLAS</title>
+	</head>
+
+	<body>
+    <h5>Tabla UNO</h5>
+ 	<table border="1" style="width:0%;height:0%">
+		 <caption>Título de la tabla</caption><!--titulo-->
+		 <tbody>
+			 <thead>
+				 <th>Celda de encabezado</th>
+				 <th>Otra celda de encabezado</th>
+			 </thead>
+			 <tr>
+				 <td>Celda en el cuerpo de la tabla</td>
+				 <td>Celda</td>
+			 </tr>
+			 <tfoot>
+				 <td>Celda de pie de tabla</td>
+				 <td>Otra celda de pie de tabla</td>
+			 </tfoot>
+		 </tbody>
+	</table>
+	 
+<!--puedo generar tablas dentro de una celda siempre que respete las tags de td-->>
+
+	<br/>
+	<h5>Tabla DOS</h5>
+	<table border="1">
+		<tbody>
+			<thead>
+				<!--COLSPAN declara una fila q ocupa el espacio de n columnas esta caso 3-->
+				<th colspan="3">Celda combinada hacia la derecha</th>
+			</thead>	
+			<tr>
+				<!--ROWSPAN ocupa una columna en n filas, este caso dos filas-->
+				<td rowspan="2">Celda combinada hacia abajo</td>
+				<td>Celda</td>
+				<td>Celda </td>
+			</tr>
+			<tr>
+				<td>Celda</td>
+				<td>Celda</td>
+				<!--si agrago una celda mas, en las anteriores filas no mostraria nada y queda mal-->
+			</tr>
+		</tbody>
+	</table> 
+
+	</body>
+</html>

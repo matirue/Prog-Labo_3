@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Introducción a HTML 5</title>
+    </head>
+    <body>
+        <!--estiqueta de imagen mas usada, src le indico donde esta la imagen
+        whdth = ancho en pixel
+        height = alto en pixel
+        alt = -->
+        <h5>muestro gif</h5>
+       <img src="imagenes/programming.gif" width="100px" height="100px" alt="Programador" />
+       <hr/>
+       <!--style le doy ancho y alto de otra manera
+       usemap me secciona la imagen en una area-->
+       <h5>Si hago click en el sol voy a la pagina del sol, y en cada planeta a sus paginas</h5>
+       <img src="imagenes/planets.gif" alt="Planets" usemap="#planetmap" style="width:145px;height:126px;">
+       <map name="planetmap"> <!-- coordenadas del usemap  al hacer click me cambia a la pagina indicada en href-->
+        <area shape="rect" coords="0,0,82,126" alt="Sun" href="imagenes/sol.html">
+        <area shape="circle" coords="90,58,3" alt="Mercury" href="imagenes/mercurio.html">
+        <area shape="circle" coords="124,58,8" alt="Venus" href="imagenes/venus.html">
+       </map>
+    </body>
+</html>
