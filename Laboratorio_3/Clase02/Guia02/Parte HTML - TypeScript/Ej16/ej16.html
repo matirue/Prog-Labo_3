@@ -1,0 +1,30 @@
+<!--Confeccionar un formulario que permita ingresar el nombre de una persona, su mail, su
+DNI (documento nacional de identidad) y finalmente su currículum vitae (este último dato
+hacerlo utilizando un <TEXTAREA>). Al pulsar el botón btnAceptar , por medio de una
+función en TypeScript, mostrar todos sus datos por consola.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 16</title>
+
+    <script src="./clase.js" ></script>
+
+</head>
+<body>
+    <!-- <span> <h4>Nombre:</h4> </span> -->
+    <input type="text" id="txtNombre" placeholder="Nombre">
+    <br><br>   
+    <input type="text" id="txtEmail" placeholder="Correo electronico">
+    <br><br>
+    <input type="text" id="txtDNI" placeholder="DNI">
+    <!--<input type="text" id="curriculum" placeholder="Currículum Vitae">-->
+    <br><br>
+    <textarea rows="10" col="5" id="curriculum" placeholder="Currículum Vitae"></textarea>
+
+    <br><br>
+    <input type="button" onclick="Mostrar()" value="Mostrar">
+</body>
+</html>

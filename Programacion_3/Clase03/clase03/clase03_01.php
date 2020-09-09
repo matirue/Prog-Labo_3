@@ -1,5 +1,5 @@
 <?php
-$tipoEjemplo = 1;
+$tipoEjemplo = 4;
 
 switch($tipoEjemplo)
 {
