@@ -1,0 +1,39 @@
+<!--Confeccionar un formulario que muestre un control de cada tipo y los muestre todos
+deshabilitados. (Cuando conozca JavaScript podemos habilitarlos por ejemplo si el visitante
+ingresa una clave correcta, por ahora vea como queda visualmente el formulario con los
+controles deshabilitados)-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 20</title>
+
+    <script src="./clase.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form role="form">
+            <fieldset disabled> <!--recuadro y deshabilito todo-->
+                <div>
+                    <label for="ususario">Nombre de usuario: </label>
+                    <input type="text" name="usuario" id="usuario" disabled/>
+                </div>
+                <div>
+                    <label for="clave">Contrase&ntilde;a: </label>
+                    <input type="password" name="clave" id="clave" disabled/>
+                </div>                
+            </fieldset>    
+            <div>
+                <input type="checkbox" value="" disabled/> Acepto los terminos y condiciones
+            </div>
+            <div>
+                <!--<input type="button" onclick="Seguir()" value="Seguir">  -->
+                <!--click y mandar a otra pag-->
+                <button type="submit" class="btn btn-default">Seguir</button>
+            </div>    
+        </form>
+    </div>
+</body>
+</html>
