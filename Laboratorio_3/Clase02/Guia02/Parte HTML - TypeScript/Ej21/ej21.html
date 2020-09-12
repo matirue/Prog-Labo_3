@@ -1,0 +1,35 @@
+<!--Se necesita hacer una página que contenga dos cuadros de texto (dónde se ingresarán
+números), un botón (con la leyenda ‘Calcular’) y cuatro controles de tipo ‘radioButton’ (suma,
+resta, multiplicación y división). Cuando se pulsa el botón una función deberá mostrar el
+resultado (en la consola y en otro cuadro de texto), de acuerdo al tipo de operación que el
+usuario eligió. Utilizar la estructura ‘switch’ .-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 21</title>
+
+    <script src="./clase.js"></script>
+</head>
+<body>
+    <td> <h3>Ingrese numeros: </h3> </td>
+    <td> >> Variable A: </td><input type="text" id="num_A" placeholder="0" /><br><br>
+    <td> >> Variable B:  </td><input type="text" id="num_B" placeholder="0 "/>
+    <hr>    
+        <input type="radio" name="cuenta" value="sumar" id="0"> Sumar <br>
+        <input type="radio" name="cuenta" value="restar" id="1"> Restar <br>
+        <input type="radio" name="cuenta" value="multiplicar" id="2"> Multiplicar <br>
+        <input type="radio" name="cuenta" value="dividir" id="3"> Dividir <br>
+    <!--
+        <input type="radio" name="cuenta" value="sumar" id="sumar"> Sumar <br>
+        <input type="radio" name="cuenta" value="restar" id="restar"> Restar <br>
+        <input type="radio" name="cuenta" value="multiplicar" id="multiplicar"> Multiplicar <br>
+        <input type="radio" name="cuenta" value="dividir" id="dividir"> Dividir <br>
+    -->
+    <hr>    
+    <input type="button" onclick="Calcular()" value="Resultado" />    
+</body>
+</html>

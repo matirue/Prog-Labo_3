@@ -7,7 +7,7 @@ function MostrarEmails() : void
         if (variable.checked) 
         {
             variable = (<HTMLInputElement>document.getElementById(i.toString())).value;
-            //console.log(variable);
+            //console.log("Selecciono: " + variable);
             alert("Selecciono: " + variable);
         }
     }

@@ -1,0 +1,3 @@
+Legajo: 1234 - Persona: rueda, matias
+Legajo: 4321 - Persona: bbbb, aaaa
+Legajo: 55555 - Persona: sdasda, bbb

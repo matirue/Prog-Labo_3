@@ -1,0 +1,29 @@
+<!--
+    Crear una página que posea un formulario que permita el ingreso del nombre, apellido,
+email y cantidad de horas trabajadas a la semana de un operario. Al pulsar el botón
+btnCalcular , se invocará a una función que calcule y muestre en un cuadro de texto (INPUT
+type=text) el salario mensual del operario. El salario se calculará por medio de la cantidad de
+horas trabajadas al mes por un coeficiente. Dicho coeficiente lo retornará la función
+ObtenerCoeficiente (por el momento será siempre 6.88).
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 23</title>
+</head>
+<body>
+    <form id="formulario" action="enviado.php" method="post">
+        <caption><h3>Datos</h3></caption>
+        <label><b>Nombre:</b></label><input type="text" name="nombre"><br><br>
+        <label><b>Apellido:</b></label><input type="text" name="apellido"><br><br>
+        <label><b>Emails:</b></label><input type="text" name="email"><br><br>
+        <label><b>Horas:</b></label><input type="text" name="horas"><br><br>
+        <hr>
+        <input type="button" onclick="" value="Calcular">
+
+    </form>
+</body>
+</html>

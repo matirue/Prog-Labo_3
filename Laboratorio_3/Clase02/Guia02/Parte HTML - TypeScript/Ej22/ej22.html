@@ -1,0 +1,30 @@
+<!--Cree una página que muestre, a través de un Array, los nombres de los meses de un
+año, el número al que ese mes corresponde o ambos. Utilizar controles de tipo ’checkBox’.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 22</title>
+
+    <script src="./clase.js"></script>
+</head>
+<body>
+    <tb><h3>Numeracion del mes</h3></tb> <!--lo hice con radio para evitar la seleccion multiple-->    
+    <input type="radio" name="mes" value="Enero" id="1">Enero<br>
+    <input type="radio" name="mes" value="Febrero" id="2">Febrero<br>
+    <input type="radio" name="mes" value="Marzo" id="3">Marzo<br>
+    <input type="radio" name="mes" value="Abril" id="4">Abril<br>
+    <input type="radio" name="mes" value="Mayo" id="5">Mayo<br>
+    <input type="radio" name="mes" value="Junio" id="6">Junio<br>
+    <input type="radio" name="mes" value="Julio" id="7">Julio<br>
+    <input type="radio" name="mes" value="Agosto" id="8">Agosto<br>
+    <input type="radio" name="mes" value="Septiembre" id="9">Septiembre<br>
+    <input type="radio" name="mes" value="Octubre" id="10">Octubre<br>
+    <input type="radio" name="mes" value="Noviembre" id="11">Noviembre<br>
+    <input type="radio" name="mes" value="Diciembre" id="12">Diciembre<br>
+    <hr>
+    <input type="button" onclick="NumMes()" value="Mostrar numero">
+</body>
+</html>
