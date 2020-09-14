@@ -3,7 +3,8 @@ session_start();
  
     $inactivo = 15;//expresado en segundos
  
-    if(isset($_SESSION['tiempo'])) {
+    if(isset($_SESSION['tiempo'])) //check si ya tiene una varianle de session
+    {
 		$vida_session = time() - $_SESSION['tiempo'];
         if($vida_session > $inactivo)
         {
@@ -13,7 +14,7 @@ session_start();
 		echo "Todav&iacute;a faltan ".($inactivo - $vida_session)." segundos";
     }
 	else{
-		$ahora = time();
+		$ahora = time();//cuenta el tiempo
 		echo "Variable de sesi&oacute;n NO establecida...<br/>Se establece en ".$ahora;
 		$_SESSION['tiempo'] = $ahora;
 	}

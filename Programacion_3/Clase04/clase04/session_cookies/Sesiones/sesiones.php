@@ -4,7 +4,7 @@ session_start();
 if(isset($_GET["op"])){
 
 	switch($_GET["op"]){
-		case "1":
+		case "1"://abre session 
 
 			$_SESSION["clave"] = "valor";
 
@@ -12,7 +12,7 @@ if(isset($_GET["op"])){
 			
 			echo '<a href="verificar_sesion.php" >Ir a otra p&aacute;gina</a><br/>';
 			break;
-		case "2":
+		case "2"://cierro o elimino session 
 			session_unset();			
 			var_dump($_SESSION);
 			

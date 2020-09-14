@@ -1,6 +1,6 @@
 <?php
-//INDICO CUAL SERA EL DESTINO DEL ARCHIVO SUBIDO
-$destino = "archivos/" . $_FILES["archivo"]["name"];
+//INDICO CUAL SERA EL DESTINO DEL ARCHIVO SUBIDO o sea recupero el archivo y lo preparo para q se guarde en archivos
+$destino = "archivos/" . $_FILES["archivo"]["name"]; 
 
 $uploadOk = TRUE;
 
@@ -11,17 +11,18 @@ $uploadOk = TRUE;
 //PATHINFO_BASENAME - retorna solo el nombre del archivo (con la extension)
 //PATHINFO_EXTENSION - retorna solo extension
 //PATHINFO_FILENAME - retorna solo el nombre del archivo (sin la extension)
-
+       
 var_dump(pathinfo($destino));die();
 
-$tipoArchivo = pathinfo($destino, PATHINFO_EXTENSION);
+$tipoArchivo = pathinfo($destino, PATHINFO_EXTENSION);//retorna solo la extension del archivo
 
-
+/************************ CHECK *****************************/
 //VERIFICO QUE EL ARCHIVO NO EXISTA
 if (file_exists($destino)) {
     echo "El archivo ya existe. Verifique!!!";
     $uploadOk = FALSE;
 }
+
 //VERIFICO EL TAMAÑO MAXIMO QUE PERMITO SUBIR
 if ($_FILES["archivo"]["size"] > 500000) {
     echo "El archivo es demasiado grande. Verifique!!!";
@@ -29,6 +30,8 @@ if ($_FILES["archivo"]["size"] > 500000) {
 }
 
 //VERIFICO SI ES UNA IMAGEN O NO
+//GETIMAGESIZE obtiene el tamaño de una imagen, si no es una imagen retorna false
+//die() corta el scrip 
 var_dump(getimagesize($_FILES["archivo"]["tmp_name"]));die();
 
 //OBTIENE EL TAMAÑO DE UNA IMAGEN, SI EL ARCHIVO NO ES UNA

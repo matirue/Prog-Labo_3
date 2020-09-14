@@ -1,4 +1,4 @@
-//FUNCIONES BASICAS
+//FUNCIONES BASICAS               :retorno     
 function Sumar(a:number, b:number):number {
     return a+b;
 }
@@ -76,7 +76,7 @@ function Capitalizar(cadena: string):string {
 //************************************************************************************************/
 //PARAMETROS REST
 function CompletarNombreApellido( nombre:string, ...losDemasParametros:string[] ):string {
-	return nombre + " " + losDemasParametros.join(" ");
+	return nombre + " " + losDemasParametros.join(" ");//join toma un array y lo devuelve en cadena con una separacion que le indico, este caso " "
 }
 
 let superman:string = CompletarNombreApellido("Clark", "Joseph", "Kent");

@@ -1,6 +1,6 @@
 <?php
 
-setcookie("TestCookie1", "",time()-3600);
+setcookie("TestCookie1", "",time()-3600);//con el mismo nombre se le asigna un tiempo negaitvo
 
 echo "<br/>Despu&eacute;s de eliminar...<br/>";
 
