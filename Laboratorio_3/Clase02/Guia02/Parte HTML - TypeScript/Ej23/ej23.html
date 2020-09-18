@@ -13,16 +13,19 @@ ObtenerCoeficiente (por el momento será siempre 6.88).
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 23</title>
+
+    <script src="./clase.js"></script>
 </head>
 <body>
     <form id="formulario" action="enviado.php" method="post">
         <caption><h3>Datos</h3></caption>
-        <label><b>Nombre:</b></label><input type="text" name="nombre"><br><br>
-        <label><b>Apellido:</b></label><input type="text" name="apellido"><br><br>
-        <label><b>Emails:</b></label><input type="text" name="email"><br><br>
-        <label><b>Horas:</b></label><input type="text" name="horas"><br><br>
+        <label><b>Nombre:</b></label><input type="text" id="nombre"><br><br>
+        <label><b>Apellido:</b></label><input type="text" id="apellido"><br><br>
+        <label><b>Emails:</b></label><input type="text" id="email"><br><br>
+        <label><b>Horas:</b></label><input type="text" id="horas"><br><br>
         <hr>
-        <input type="button" onclick="" value="Calcular">
+        <input type="button" onclick="ObtenerSueldo()" value="Calcular"><br><br>
+        <label><b>Salario:</b></label><input type="text" value="" id="salario" readonly="readonly" >
 
     </form>
 </body>

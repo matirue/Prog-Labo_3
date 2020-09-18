@@ -1,0 +1,5 @@
+Namespace Prueba
+{
+Main()--> crear alumnos y mostrarlos por consola
+}
+
