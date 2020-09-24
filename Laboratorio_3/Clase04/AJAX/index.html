@@ -10,10 +10,11 @@
 		<link rel="stylesheet" type="text/css" href="css/animacion.css"-->		
 		
 		<!-- Estilos propios -->
-		<link rel="stylesheet" type="text/css" href="css/estilo.css">
-
-        <script src="./ajax.js" ></script>
-        <script src="./testAjax.js" ></script>
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        
+        <!--la inclucion del ajax.js y despues al text, podria hacer un outfile de ambos arch y mandar una sola referencia-->        
+        <script src="./ajax.js" >
+        </script> <script src="./testAjax.js" ></script>
     </head>
     <body class="container">
         <input type="button" onclick="Main.ClickGet()" value="GET" /> 

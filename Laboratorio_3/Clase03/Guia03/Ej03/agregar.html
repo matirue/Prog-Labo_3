@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar</title>
+
+    <script src="carga.js"></script>
+</head>
+<body>
+    <a href="./principal.html"> >>> Volver  </a>
+
+    
+    <table align="center" border="6">
+        <caption> 
+            <h2>Agregar un empleado</h2>
+        </caption>
+        <tr>
+            <td>Nombre: </td>
+            <td>
+                <input type="text" id="nombre" value="">
+            </td>
+        </tr>
+        <tr>
+            <td>Apellido: </td>
+            <td>
+                <input type="text" id="apellido" value="">
+            </td>
+        </tr>
+        <tr>
+            <td>Dni: </td>
+            <td>
+                <input type="text" id="dni" value="">
+            </td>
+        </tr>
+        <tr>
+            <td>Sexo: </td>
+            <td>
+                <input type="text" id="sexo" value="">
+            </td>
+        </tr>
+        <tr>
+            <td>Legajo: </td>
+            <td>
+                <input type="text" id="legajo" value="">
+            </td>
+        </tr>
+        <tr>
+            <td>Sueldo: </td>
+            <td>
+                <input type="text" id="sueldo" value="">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4" align="center">
+                <input type="button" value="Agregar" onclick="Add(); window.location.href = './principal.html';" id="btnAceptar">
+            </td>            
+        </tr>
+    </table>
+</body>
+</html>

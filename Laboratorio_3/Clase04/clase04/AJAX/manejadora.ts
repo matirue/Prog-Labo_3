@@ -3,7 +3,7 @@ namespace Ajax
     export function Suggestion(cadena:string):void{
 
         if (cadena.length == 0) { 
-            (<HTMLDivElement> document.getElementById("divNombresSugeridos")).innerHTML = "";
+            (<HTMLDivElement> document.getElementById("divNombresSugeridos")).innerHTML = "";//cada vez que pulse una tecla hago la peticion
             return;
         }
         

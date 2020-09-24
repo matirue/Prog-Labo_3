@@ -22,7 +22,7 @@
 		<div class="container">
 		<div class="page-header">
 			<div class="CajaInicio animated bounceInRight">
-				<h1>Ingrese su nombre</h1>
+				<h1>Ingrese su nombre</h1><!--                                      onekeyup funciona como el onc                   -->
 				<input type="text" id="txtNombre" style="width:100%;font-size:30px" onkeyup="Ajax.Suggestion(this.value)" />
 			</div>
 				  

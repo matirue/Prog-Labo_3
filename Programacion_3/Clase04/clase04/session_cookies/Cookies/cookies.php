@@ -24,7 +24,7 @@ setcookie("cookieAsoc[tres]", "cookieTres");
 //para evitar los errores uso el control
 if(isset($_COOKIE['cookie']))
 {
-foreach($_COOKIE['cookie'] as $name => $value) {
+foreach($_COOKIE['cookie'] as $name => $value) { //por cada uno muestro su valor
 	$name = htmlspecialchars($name);
 	$value = htmlspecialchars($value);
 	echo "$name : $value <br />";
