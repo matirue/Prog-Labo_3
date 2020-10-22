@@ -1,0 +1,15 @@
+p {
+	background : red;
+	color : navy;
+	font-size : 20pt;
+}
+/**solo aplica negrita al elemento p**/
+p.negrita {
+	font-weight : bold;
+}
+/**sin elemento esta clase es generica*/
+.claseGenerica {
+	font-style : italic;
+	font-size : 18pt;
+	font-family: 'Courier New';
+}

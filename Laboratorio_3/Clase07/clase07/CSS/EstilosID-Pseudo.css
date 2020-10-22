@@ -1,0 +1,44 @@
+/*esto solo se le puede agreagra la atiburo id de la pagina*/
+#id_unico {
+	position : relative; 
+	background : lime;
+	height : 500px; 
+	padding-left : 50px;
+	padding-top: 100px;
+	border : solid;
+	border-color : red;
+	border-width : 1;
+	visibility:visible;
+
+}
+
+/**PSEDUO CLASES*/
+a:link {/**color del link*/
+	color : red;	
+}
+a:active{/**color al poner el puntero arriba*/
+	color:cyan;
+}
+a:hover{/*al hacer click*/
+	color : green;
+}
+a:visited{/*una vez ya usuado*/
+	color:pink;
+}
+
+/**PSEDUO ELEMENTOS*/
+p:first-line{/*La primer linea con estilo*/
+	font-style : small-camps;
+}
+p:first-letter{/**la primer letra mas grande y flotada a la izq*/
+	font-size : 150%;
+	float : left;
+}
+
+/*dienio del div*/
+div.claseDiv{
+	border : dotted;
+	border-color : black;
+	border-width : 2;
+	visibility:visible;	
+}

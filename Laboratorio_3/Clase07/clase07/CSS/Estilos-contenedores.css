@@ -1,0 +1,17 @@
+/** */
+* {
+    box-sizing: border-box;
+}
+
+/** alineacion del div a la izq, ancho y espacio entre los bordes de los contencedores y el texto*/
+.container {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/** limpia ambos lados del div q lo contiene y lo muestra en formato de tabla*/
+.clearfix::after {
+    clear: both;
+    display: table;
+}

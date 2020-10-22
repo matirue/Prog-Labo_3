@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Aplicación con Estilos</title>
+
+		<link href="./img/utnLogo.png" rel="icon" type="image/png" />
+		
+		<!--disenio de la etiqueta body cambiando fondo, color y tamanio -->
+		<style type="text/css">
+			body{
+				background : navy;
+				color: white;
+				font-size: 14pt;
+				}
+		</style>
+
+		<!--invoco los estidlos de dos maneras diferentes, el primero disenia los h3
+		y el segundo disenia el h4-->
+		<link type="text/css" rel="stylesheet" href="CSS/Estilos.css" />
+
+		<style type="text/css">
+			@import url("CSS/Estilos2.css");
+		</style>
+		
+	</head>
+	<body>
+		Estilo aplicado al body con el tag STYLE <br />
+		
+		<span style="background-color:white;color:red;font-size:18pt;"> 
+			Estilo aplicado en el atributo STYLE 
+		</span> <br />
+		
+		<h3> 
+			Estilo aplicado desde un archivo *.CSS
+		</h3>
+		
+		<h4> 
+			Estilo aplicado desde el comando @IMPORT
+		</h4>
+		
+	</body>
+</html>
