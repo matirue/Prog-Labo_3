@@ -11,14 +11,15 @@ $mpdf = new \Mpdf\Mpdf(['orientation' => 'P',
                         'nbpgSuffix' => ' páginas']);//P-> vertical; L-> horizontal
 
 
-
+//divido el encabezado en 3 partescon |, a la izq la fecha | nada | pagina 
 $mpdf->SetHeader('{DATE j-m-Y}||{PAGENO}{nbpg}');
 //alineado izquierda | centro | alineado derecha
-$mpdf->setFooter('{DATE Y}|Programacón III|{PAGENO}');
+$mpdf->setFooter('{DATE Y}|Programacón III|{PAGENO}');//final de pagina
 
 
 $ArrayDeProductos = Producto::TraerTodosLosProductos();
 
+//genero una tabla con la info correspondinte
 $grilla = '<table class="table" border="1" align="center">
             <thead>
                 <tr>

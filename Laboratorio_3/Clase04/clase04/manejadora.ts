@@ -6,7 +6,7 @@ namespace Test{
     export function Ajax():void {
 
         //METODO; URL; ASINCRONICO?
-        xhttp.open("GET", "BACKEND/ajax_test.php", true);//perticion get si parametro
+        xhttp.open("GET", "BACKEND/ajax_test.php", true);//peticion get si parametro
 
         //ENVIO DE LA PETICION
         xhttp.send();//sin param devolvera el hola mundo ajax
