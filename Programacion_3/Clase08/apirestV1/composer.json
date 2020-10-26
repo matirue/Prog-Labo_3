@@ -1,0 +1,7 @@
+{
+	"name": "slim/slim",
+	"description": "clase08 api",
+	"require":{
+		"slim/slim": "^3.0"
+	}
+}
